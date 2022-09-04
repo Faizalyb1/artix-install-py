@@ -63,7 +63,7 @@ os.system("clear")
 os.system("pacman -S grub efibootmgr os-prober")
 os.system("clear")
 
-os.system("grub-install --target=i386-pc /dev/vda")
+os.system("grub-install --target=i386-pc /dev/sda")
 os.system("grub-mkconfig -o /boot/grub/grub.cfg")
 time.sleep(2)
 os.system("clear")
