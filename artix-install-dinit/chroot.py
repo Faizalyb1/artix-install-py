@@ -58,15 +58,7 @@ os.system("clear")
 
 os.system("pacman -S ntfs-3g")
 os.system("clear")
-
-#grub
-os.system("pacman -S grub efibootmgr os-prober")
-os.system("clear")
-
-os.system("grub-install --target=i386-pc /dev/sda")
-os.system("grub-mkconfig -o /boot/grub/grub.cfg")
 time.sleep(2)
-os.system("clear")
 
 #useradd
 username = input("Username: ")
