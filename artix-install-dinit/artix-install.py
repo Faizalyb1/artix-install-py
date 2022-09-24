@@ -19,11 +19,12 @@ print(" ")
 boot_partition = input("Boot partition (example /dev/sda1), /dev/???: ")
 os.system("mkfs.ext4 " f"{boot_partition}")
 os.system("mkdir /mnt/boot")
+os.system("mount " f"{boot_partition} " "/mnt/boot")
 
 os.system("clear")
 os.system("basestrap -i /mnt base base-devel linux linux-headers linux-firmware dinit git nano")
 os.system("fstabgen -U /mnt > /mnt/etc/fstab")
-os.system("mount " f"{boot_partition} " "/mnt/boot")
+
 
 os.system("cp $(pwd)/chroot.py /mnt")
 os.system("artix-chroot /mnt /bin/bash")
