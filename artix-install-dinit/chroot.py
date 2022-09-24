@@ -4,9 +4,7 @@ import time
 
 os.system("clear")
 
-print("Example: Europe/Istanbul, Europe/Zurich, America/New_York")
-timezone = input("Timezone: ")
-os.system("ln -sf /usr/share/zoneinfo/" f"{timezone} " "/etc/localtime")
+os.system("ln -sf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime")
 os.system("hwclock --systohc")
 
 os.system("clear")
@@ -61,10 +59,10 @@ os.system("clear")
 time.sleep(2)
 
 #grub
-os.system("pacman -S grub efibootmgr os-prober")
+os.system("pacman -S grub os-prober")
 os.system("clear")
 
-os.system("grub-install --target=i386-pc /dev/sda")
+os.system("grub-install --recheck /dev/sda")
 os.system("grub-mkconfig -o /boot/grub/grub.cfg")
 time.sleep(2)
 os.system("clear")
