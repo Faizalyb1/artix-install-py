@@ -1,0 +1,1 @@
+sudo pacman -S xorg-server xorg-xinit lxappearance firefox xfce4-terminal xterm xorg-xrandr xorg-xbacklight xdg-utils xdg-user-dirs-gtk xorg-xdpyinfo pcmanfm gtk-engine-murrine libgda amd-ucode xf86-video-amdgpu xf86-video-ati ntp-dinit gparted mpv picom qt5ct
