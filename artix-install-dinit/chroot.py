@@ -43,10 +43,10 @@ os.system("passwd")
 os.system("clear")
 
 #packages
-os.system("pacman -Sy networkmanager networkmanager-dinit")
+os.system("pacman -Sy networkmanager networkmanager-dinit ntp-dinit")
 os.system("clear")
 print('''
-After restarting the computer, enter the command "dinitctl enable NetworkManager"
+After restarting the computer, enter the command "sudo dinitctl enable NetworkManager and enable ntpd too"
 ''')
 time.sleep(6)
 os.system("clear")
