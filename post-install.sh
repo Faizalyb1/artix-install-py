@@ -1,7 +1,7 @@
 #!/bin/bash
 
 printf '\033c'
-sudo pacman -Sy xorg-server xorg-xinit lxappearance firefox xfce4-terminal xterm mtools dosfstools xorg-xrandr xorg-xbacklight xdg-utils xdg-user-dirs-gtk xorg-xdpyinfo pcmanfm gtk-engine-murrine libgda amd-ucode xf86-video-amdgpu xf86-video-ati gparted mpv picom qt5ct
+sudo pacman -Sy xorg-server xorg-xinit lxappearance firefox alacritty xterm mtools dosfstools xorg-xrandr xorg-xbacklight xdg-utils xdg-user-dirs-gtk xorg-xdpyinfo pcmanfm gtk-engine-murrine libgda amd-ucode xf86-video-amdgpu xf86-video-ati gparted mpv picom qt5ct ntp-dinit evince file-roller 
 clear
 exit
 sleep 6s
