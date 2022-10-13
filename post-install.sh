@@ -10,7 +10,7 @@ xdg-user-dirs-update
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin/
 makepkg -si
-echo "Done"
+echo "YAY-Done"
 sleep 6s
 
 yay -S pacseek-bin
