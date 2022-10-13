@@ -22,8 +22,8 @@ os.system("mkdir /mnt/boot")
 os.system("mount " f"{boot_partition} " "/mnt/boot")
 
 os.system("clear")
-os.system("basestrap -i /mnt base base-devel linux linux-headers linux-firmware dinit git nano")
-os.system("fstabgen -U /mnt > /mnt/etc/fstab")
+os.system("basestrap -i /mnt base base-devel linux-lts linux-lts-headers linux-firmware dinit git vim")
+os.system("fstabgen -U /mnt >> /mnt/etc/fstab")
 
 
 os.system("cp $(pwd)/chroot.py /mnt")
